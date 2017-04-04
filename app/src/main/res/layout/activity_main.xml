@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.utep.cs.cs4330.bluetoothproject.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/checkEnabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enabled?"
+            android:layout_centerVertical="true"
+            android:onClick="isBluetoothEnabled"/>
+
+        <Button
+            android:id="@+id/enableBluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable"
+            android:onClick="enableBluetooth"
+            android:layout_below="@id/checkEnabled"/>
+
+    </RelativeLayout>
+    
+</android.support.constraint.ConstraintLayout>
